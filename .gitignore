@@ -1,2 +1,2 @@
-#ignore mod to GO
-.mod
+#ignore mod to GOLANG
+*.mod
