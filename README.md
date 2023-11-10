@@ -1,4 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
-Later, to run on terminal (remember add the extent of file):
+To run on terminal:
 
-$ go run [filename].go
+$ go mod tidy 
+$ go run .
+
+- Server on localhost:8000

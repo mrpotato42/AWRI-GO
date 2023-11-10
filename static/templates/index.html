@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+    <title>Pokedex API with GO</title>
+  </head>
+  <body>
+    <section>
+      <h1>Pokedex con GO</h1>
+      <form method="POST">
+        <label for="pokemonNumber">ID de Pokémon:</label>
+        <input type="text" name="pokemonNumber" />
+        <div class="buttonContainer">
+          <img
+            src="/static/img/pokeicon.png"
+            alt="Pokeball Icon"
+            class="pokeball"
+          />
+          <button type="submit" id="searchButton">Consultar</button>
+          <img
+            src="/static/img/pokeicon.png"
+            alt="Pokeball Icon"
+            class="pokeball"
+          />
+        </div>
+      </form>
+
+      {{if .PokemonInfo}}
+      <h2>Información del Pokémon</h2>
+      <div class="pokemonImg">
+      <img src="{{.PokemonInfo.Sprite.FrontDefault}}" alt="{{.PokemonInfo.Name}}" id="pokemonImage" />
+      </div>
+      <label>Pokemon ID: {{.PokemonInfo.ID}}</label>
+      <label>Pokemon Name: {{.PokemonInfo.Name}}</label>
+        <label>Pokemon Types:</label>
+      <ul>
+        {{range .PokemonInfo.Types}}
+        <li>{{.TypeDetail.Name}}</li>
+        {{end}}
+      </ul>
+      {{end}}
+    </section>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100vh;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    height: 715px;
+}
+
+section h1 {
+    color: #e72222;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.3em;
+    font-weight: 900;
+    
+}
+
+section h2 {
+    color: #464646;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section p{
+    color: #464646;
+    font-size: 1.1rem;
+}
+
+section label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+section input {
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #e72222;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+section .buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+section button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: azure;
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #e72222;
+    margin: 10px 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: #3b45cf;
+}
+
+.pokeball {
+    width: 60px;
+    height: 60px;
+    margin: 5px auto;
+}
+
+#pokemonInfo {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pokemonImg {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+#pokemonImage {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.infoContainer {
+    display: flex;
+}   
+
+.infoContainer .column {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px; 
+}
+
+.infoContainer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.infoContainer ul li {
+     display: block; 
+     width: 100%;
+     margin-bottom: 5px; 
+}
+
+
+#pokemonTypes,
+#pokemonAbilities {
+    font-style: italic;
+}
+
+section footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
