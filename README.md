@@ -4,6 +4,6 @@ To run on terminal:
 $ go mod tidy 
 
 
-$ go run [filename].go
+$ go run filename.go
 ------------------------------------------------------------------------------------------------------------------------
 - Server on localhost:8000
